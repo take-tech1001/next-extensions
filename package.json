@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export -o extensions/dist",
     "lint": "run-p -l -c --aggregate-output lint:*",
     "lint:eslint": "eslint --cache .",
     "lint:prettier": "prettier --check .",
@@ -38,6 +39,7 @@
     "react-error-boundary": "3.1.4"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.163",
     "@types/node": "16.11.6",
     "@types/react": "17.0.34",
     "@typescript-eslint/eslint-plugin": "5.3.0",
