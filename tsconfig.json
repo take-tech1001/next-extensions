@@ -13,9 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "incremental": true
   },
-  "exclude": ["node_modules", ".next", "out", "cypress"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "next.config.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "next.config.js"],
+  "exclude": ["node_modules"]
 }
