@@ -2,16 +2,15 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: { project: "./tsconfig.json" },
   settings: { tailwindcss: { groupByResponsive: true } },
-  plugins: ["simple-import-sort", "tailwindcss", "import-access", "cypress"],
+  plugins: ["simple-import-sort", "tailwindcss", "import-access"],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:cypress/recommended",
     "next/core-web-vitals",
     "prettier",
   ],
   rules: {
-    "no-console": ["error", { allow: ["warn", "info", "error"] }],
+    // "no-console": ["error", { allow: ["warn", "info", "error"] }],
     "no-restricted-syntax": ["error", { selector: "TSEnumDeclaration", message: "Don't declare enums" }],
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
@@ -42,7 +41,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports" }],
-    "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_", argsIgnorePattern: "^_" }],
+    // "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_", argsIgnorePattern: "^_" }],
     "@typescript-eslint/naming-convention": [
       "error",
       { selector: ["typeAlias", "typeParameter"], format: ["PascalCase"] },
