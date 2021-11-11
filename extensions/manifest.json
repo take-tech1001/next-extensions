@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Next.js Extensions",
+  "description": "Next.js Extensions",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "./dist/index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "/icons/icon-16x16.png",
+    "32": "/icons/icon-32x32.png"
+  },
+
+  "permissions": ["contextMenus", "tabs", "scripting", "windows", "activeTab"]
+}
