@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/chrome": "0.0.177",
-    "@types/node": "16.11.19",
+    "@types/node": "16.11.22",
     "@types/react": "17.0.38",
     "autoprefixer": "10.4.2",
     "eslint": "8.7.0",
